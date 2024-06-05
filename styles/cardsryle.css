@@ -1,0 +1,61 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  gap: 2rem;
+  background-color: antiquewhite;
+}
+
+.gameBox {
+  display: grid;
+  grid-template-columns: repeat(6, max-content);
+  grid-template-rows: repeat(3, max-content);
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.imageBox {
+  width: 150px;
+  height: 220px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  cursor: pointer;
+}
+
+.imageBox > img {
+  width: inherit;
+  height: inherit;
+  align-self: center;
+  object-fit: cover;
+}
+.closedImageBox {
+  background-image: url(../img/BG.png);
+  background-size: cover;
+}
+
+.closedImageBox > * {
+  display: none;
+}
+
+button {
+  width: 300px;
+  height: 100px;
+  border-radius: 35px;
+  font-size: 2rem;
+  background-color: rgb(0, 89, 148);
+  border: none;
+  box-shadow: 10px 0 10px 0 black;
+  color: antiquewhite;
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+}
+
+h2 {
+ text-align: center;
+}

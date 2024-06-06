@@ -53,9 +53,22 @@ button {
   box-shadow: 10px 0 10px 0 black;
   color: antiquewhite;
   font-family: "Rubik Bubbles", system-ui;
-  font-weight: 400;
+  font-weight: 400; 
+  cursor: pointer;
+  transition: transform 0.3s;
 }
 
+button:hover {
+  background-color: rgb(8, 50, 78);
+}
+
+
+button:active {
+  transform: scale(0.95);
+}
+
+
+
 h2 {
- text-align: center;
+  text-align: center;
 }

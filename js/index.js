@@ -40,6 +40,8 @@ const memoryGame = {
   openedCardsList: [],
   currentCardsList: [],
 
+
+
   toggleCard(node) {
     if (node.classList.contains("openedImageBox")) {
       node.classList.remove("openedImageBox");

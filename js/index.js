@@ -64,6 +64,14 @@ const memoryGame = {
         ...this.openedCardsList, 
         ...this.currentCardsList,
     ];
+    
+    this.currentCardsList.forEach(card => {
+        setTimeout(() => {
+          card.classList.add("empty");
+          card.innerHTML = "";
+        }, 1000);
+      });
+
       this.currentCardsList = [];
       if (this.openedCardsList.length === shuffledImages.length) {
         const congratulation = document.createElement("h2");

@@ -26,6 +26,7 @@
   overflow: hidden;
   display: flex;
   cursor: pointer;
+  transition: transform 0.1s, opacity 1s;
 }
 
 .imageBox > img {
@@ -53,7 +54,7 @@ button {
   box-shadow: 10px 0 10px 0 black;
   color: antiquewhite;
   font-family: "Rubik Bubbles", system-ui;
-  font-weight: 400; 
+  font-weight: 400;
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -62,12 +63,16 @@ button:hover {
   background-color: rgb(8, 50, 78);
 }
 
-
 button:active {
   transform: scale(0.95);
 }
 
-
+.empty {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+  pointer-events: none;
+}
 
 h2 {
   text-align: center;

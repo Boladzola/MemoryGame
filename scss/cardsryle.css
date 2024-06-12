@@ -36,7 +36,7 @@
   object-fit: cover;
 }
 .closedImageBox {
-  background-image: url(../img/BG.png);
+  background-image: url(../static/BG.png);
   background-size: cover;
 }
 

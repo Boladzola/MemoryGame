@@ -1,13 +1,13 @@
 const imagesList = [
-  "img/alice.png",
-  "img/cat.png",
-  "img/cups.jpg",
-  "img/hatter.png",
-  "img/hear.jpg",
-  "img/queen.jpg",
-  "img/rabbit.png",
-  "img/time.jpg",
-  "img/key.jpg"
+  "static/alice.png",
+  "static/cat.png",
+  "static/cups.jpg",
+  "static/hatter.png",
+  "static/hear.jpg",
+  "static/queen.jpg",
+  "static/rabbit.png",
+  "static/time.jpg",
+  "static/key.jpg"
 ];
 
 const root = document.getElementById("root");
@@ -107,6 +107,7 @@ const memoryGame = {
       imageBox.id = item + Math.random();
       imageBox.onclick = () => {
         const openedCount = this.currentCardsList.length;
+        if (imageBox.classList.contains("openedImageBox")) return null
         if (openedCount === 0) {
           this.toggleCard(imageBox);
         }
